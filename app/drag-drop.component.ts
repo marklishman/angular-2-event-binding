@@ -26,7 +26,7 @@ const draggableWidth: number = 100;
         .draggable {
             height: ${draggableHeight}px;
             width: ${draggableWidth}px;
-            background-color: FireBrick;
+            background-color: Green;
             position: absolute;
             cursor: move;
         }
