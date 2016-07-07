@@ -4,13 +4,12 @@ import { Component } from '@angular/core';
     selector: 'mouse',
     template: `
         <h1>Mouse Events</h1>
-        <div class="box" 
-             (mouseenter)="onEvent($event)"
-             (mouseleave)="onEvent($event)"
-             (mousemove)="coordinates($event)"
-             on-click="onEvent($event)"
-             on-dblclick="onEvent($event)"
-             on-contextmenu="onEvent($event)">
+        <div class="box" (mouseenter)="onEvent($event)"
+                         (mouseleave)="onEvent($event)"
+                         (mousemove)="coordinates($event)"
+                         on-click="onEvent($event)"
+                         on-dblclick="onEvent($event)"
+                         on-contextmenu="onEvent($event)">
             <p class="type">Type: {{event?.type}}</p>    
             <p>x: {{clientX}}, y: {{clientY}}</p>
             <p>ctrl: {{event?.ctrlKey}}, shift: {{event?.shiftKey}}, meta: {{event?.metaKey}}</p>
